@@ -1,1 +1,1 @@
-* 2D Custom Engine *
+* Custom 2D Graphic Engine
