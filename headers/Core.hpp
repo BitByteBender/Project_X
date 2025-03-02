@@ -37,10 +37,10 @@ public:
   float GetPosX() const;
   float GetPosY() const;
   void SetDefaultPos(const float &PosX, const float &PosY);
-  void SetRotationCW(const float &RotCW);
-  void SetRotationCCW(const float &RotCCW);
-  float GetRotationCW() const;
-  float GetRotationCCW() const;
+  void SetRot(const float &RotCW);
+  //void SetRotCCW(const float &RotCCW);
+  float GetRot() const;
+  //float GetRotCCW() const;
 };
 
 class clsCShape : public clsTransform
@@ -77,8 +77,8 @@ public:
   void SetTransformXY(const float &PosX, const float &PosY);
   void SetDfltPos(const float &PosX, const float &PosY);
   void SetDfltPos(void);
-  void SetRotationCW(const float &Rot);
-  void SetRotationCCW(const float &Rot);
+  void SetRotation(const float &Rot);
+  //void SetRotationCCW(const float &Rot);
   ~clsCShape();
 };
 #endif /* Core */

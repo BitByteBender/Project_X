@@ -18,10 +18,11 @@ int main() {
     
     sf::Clock deltaClock;
 
-    float i = 0.f, j = 0.f, CurrentPosX = 2.f, CurrentPosY = 2.f;
+    float CurrentPosX = 2.f, CurrentPosY = 2.f, Rot = 15.f, RotC = 0.f;
     bool Trigger = false, is_Active = false;
     std::string Shapes = "stohcr";
-    uint16_t s = 0;
+    uint16_t i = 0, j = 0, s = 0;
+    int16_t RotCounter = 0;
     while (window.isOpen()) {
         while (const auto event = window.pollEvent()) {
             ImGui::SFML::ProcessEvent(window, *event);
@@ -63,30 +64,44 @@ int main() {
 	  ImGui::SameLine();
 	  if (ImGui::Button("Reset")) {
 	    CurrentPosX = 2.0f, CurrentPosY = 2.0f;
-	    //shape.SetDefaultPos(CurrentPosX, CurrentPosY);
-	    //shape.SetInitPos(shape.GetPosX(), shape.GetPosY());
+	    shape.SetRotation(RotC * -1);
+	    cout<<"Reset: "<<Rot<<" | "<<RotCounter<<'\n';
 	    shape.SetInitPos(CurrentPosX, CurrentPosY);
 	    shape.SetColor();
 	    shape.SetShapeColor(shape.GetColor());
+
 	    is_Active = false;
 	    i = 0;
+	    RotCounter = 0, RotC = 0.f;
 	  }
 	  ImGui::TreePop();
 	  ImGui::PopStyleColor();
 	}
 
 	if (ImGui::TreeNode("Transform Tools")) {
+	  ImGui::BulletText("Axis Transform");
 	  if (ImGui::Button("X-Axis")) shape.SetTransformX(CurrentPosX + 5.0f);
 	  ImGui::SameLine();
 	  if (ImGui::Button("Y-Axis")) shape.SetTransformY(CurrentPosY + 5.0f);
 	  ImGui::SameLine();
 	  if (ImGui::Button("XY-Axis")) shape.SetTransformXY(CurrentPosX + 5.0f, CurrentPosY + 5.0f);
-	  if (ImGui::Button("Rotate Clockwise")) shape.SetRotationCW(7.0f);
+	  ImGui::BulletText("Rotation Tools");
+	  if (ImGui::Button("Rotate Clockwise")) {
+	    RotCounter--;
+	    RotC += Rot;
+	    shape.SetRotation(Rot);
+	    cout<<"RC: "<<shape.GetRot()<<" | ";
+	    cout<<Rot<<" | "<<RotC<<'\n';
+	  }
 	  ImGui::SameLine();
 	  if (ImGui::Button("Rotate CounterClockwise")) {
-	    shape.SetRotationCCW(15.0f);
-	    //shape.SetDfltPos(shape.GetPosX(), shape.GetPosY());
+	    RotCounter++;
+	    RotC += (Rot * -1);
+	    shape.SetRotation(Rot * -1);
+	    cout<<"RCC: "<<shape.GetRot()<<" | ";
+	    cout<<Rot<<" | "<<RotC<<'\n';
 	  }
+	  ImGui::BulletText("Scale Tools");
 	  ImGui::TreePop();
 	}
 
@@ -95,10 +110,9 @@ int main() {
 	  if (ImGui::Button("Random Shape")) {
 	    shape.SetWidth(Width);
 	    s == 0 ? shape.SetHeight(Width) : shape.SetHeight(Width * 2);
-	    //shape.SetDfltPos(shape.GetPosX(), shape.GetPosY());
 	    shape.SetShape(Shapes[s]);
 	    shape.SetShapeColor(shape.GetColor());
-	    //shape.SetInitPos(shape.GetPosX(), shape.GetPosY());
+	    shape.SetRotation(RotC);
 	    shape.SetDfltPos();
 	    s++;
 	    if (s > 5) s = 0;
