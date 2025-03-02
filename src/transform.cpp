@@ -70,22 +70,23 @@ float clsTransform::GetPosY() const
   return (m_PosY);
 }
 
-void clsTransform::SetRotationCW(const float &RotCW)
+void clsTransform::SetRot(const float &RotCW)
 {
   this->m_RotCW = RotCW;
 }
-
-void clsTransform::SetRotationCCW(const float &RotCCW)
+/*
+void clsTransform::SetRotCCW(const float &RotCCW)
 {
   this->m_RotCCW = RotCCW;
 }
-
-float clsTransform::GetRotationCW() const
+*/
+float clsTransform::GetRot() const
 {
   return (m_RotCW);
 }
-
-float clsTransform::GetRotationCCW() const
+/*
+float clsTransform::GetRotCCW() const
 {
   return (m_RotCCW);
 }
+*/

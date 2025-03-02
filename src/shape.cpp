@@ -7,7 +7,8 @@ clsCShape::clsCShape()
 clsCShape::clsCShape(char ShapeType, uint16_t Clr[5], float PosX, float PosY, float Width, float Height, float Gravity, float RotCW, float RotCCW)
   : clsTransform(PosX, PosY, Width, Height, Gravity, RotCW, RotCCW), m_Shape(nullptr), m_Color(nullptr), m_CTransform(nullptr)
 {
-  m_CTransform = new clsTransform(PosX, PosY, Width, Height, Gravity, RotCW, RotCCW);
+  //m_CTransform = new clsTransform(PosX, PosY, Width, Height, Gravity, RotCW, RotCCW);
+  m_CTransform = this;
   SetShape(ShapeType);
   *m_Shape = GetShape();
   Clr[4] == 0 ? SetColor() : SetColor(Clr);
@@ -82,6 +83,9 @@ void clsCShape::SetInitPos(const float &PosX, const float &PosY)
 {
   m_CTransform->SetDefaultPos(PosX, PosY);
   GetShape().setPosition({m_CTransform->GetPosX(), m_CTransform->GetPosY()});
+
+  //GetShape().rotate(sf::degrees(0));
+  //GetShape().rotate(sf::degrees(0));
 }
 
 void clsCShape::SetTransformX(const float &PosX)
@@ -110,17 +114,22 @@ void clsCShape::SetDfltPos(void)
   SetInitPos(m_CTransform->GetPosX(), m_CTransform->GetPosY());
 }
 
-void clsCShape::SetRotationCW(const float &Rot)
+void clsCShape::SetRotation(const float &Rot)
 {
-  m_CTransform->SetRotationCW(Rot);
-  GetShape().rotate(sf::degrees(m_CTransform->GetRotationCW()));
+  m_CTransform->SetRot(Rot);
+  GetShape().rotate(sf::degrees(m_CTransform->GetRot()));
+  //clsTransform::SetRotCW(Rot);
+  //GetShape().rotate(sf::degrees(clsTransform::GetRotCW()));
 }
 
-
+/*
 void clsCShape::SetRotationCCW(const float &Rot)
 {
   clsCShape::SetRotationCW(Rot * (-1));
+  //m_CTransform->SetRotationCCW(Rot);
+  //GetShape().rotate(sf::degrees(m_CTransform->GetRotationCCW() * -1));
 }
+*/
 
 clsCShape::~clsCShape()
 {
@@ -129,7 +138,8 @@ clsCShape::~clsCShape()
   
   if (m_Color != nullptr)
     delete m_Color;
-  
+  /*
   if (m_CTransform != nullptr)
     delete [] m_CTransform;
+  */
 }
