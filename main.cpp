@@ -12,17 +12,31 @@ int main() {
     (void) ImGui::SFML::Init(window);
     ImGui::LoadIniSettingsFromDisk("imgui.ini");
     ImGui::SetNextWindowPos(ImVec2(850, 0));
+    //Load Font
+    ImGuiIO &io = ImGui::GetIO();
 
+    const std::string fontPath = "../Fonts/MartianMono-VariableFont_wdth,wght.ttf";
+    ImFont *customFont = io.Fonts->AddFontFromFileTTF(fontPath.c_str(), 16.0f);
+
+    if (customFont == nullptr) {
+      std::cerr<<"Failed to load custom font!"<<endl;
+      return (-1);
+    }
+
+    (void)ImGui::SFML::UpdateFontTexture();
+
+    
     uint16_t ColorArr[5] = {75, 52, 93, 255, 0};
     clsCShape shape('r', ColorArr, 50.f, 50.f, 350.f, 100.f, 0.f, 0.f, 0.f);
-    
-    sf::Clock deltaClock;
+
 
     float CurrentPosX = 2.f, CurrentPosY = 2.f, Rot = 15.f, RotC = 0.f;
     bool Trigger = false, is_Active = false;
     std::string Shapes = "stohcr";
     uint16_t i = 0, j = 0, s = 0;
     int16_t RotCounter = 0;
+    
+    sf::Clock deltaClock;
     while (window.isOpen()) {
         while (const auto event = window.pollEvent()) {
             ImGui::SFML::ProcessEvent(window, *event);
@@ -41,10 +55,10 @@ int main() {
 	float textWidth   = ImGui::CalcTextSize("World Editor").x;
 	ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
 
-	//ImGui::PushFont(LargeFont);
+	ImGui::PushFont(customFont);
 	// Render the title text
 	ImGui::Text("World Editor");
-	//ImGui::PopFont();
+
 	ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.0f, 0.0f, 1.0f));
 	if (ImGui::TreeNode("Animation Tab")) {
 	  ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(5.0f, 0.0f, 4.0f, 1.0f));
@@ -100,7 +114,14 @@ int main() {
 	    shape.SetRotation(Rot * -1);
 	    cout<<"RCC: "<<shape.GetRot()<<" | ";
 	    cout<<Rot<<" | "<<RotC<<'\n';
+	  }/*
+	  if (ImGui::Button("Rot Origin CW")) {
+	    //CurrentPosX = shape.GetPosX() / 0.5f, CurrentPosY = shape.GetPosY() / 0.5f;
+	    shape.SetRotCW(CurrentPosY), shape.SetRotCCW(CurrentPosY);
+	    shape.GetShape().setOrigin({shape.GetRotCW() * 1, shape.GetRotCCW() * -1.f});
+	    //shape.SetRotation();
 	  }
+	  ImGui::SameLine();*/
 	  ImGui::BulletText("Scale Tools");
 	  ImGui::TreePop();
 	}
@@ -127,6 +148,7 @@ int main() {
 	}
 
 	ImGui::PopStyleColor();
+	ImGui::PopFont();
 	ImGui::End();
 	
 	if (is_Active == true) {
@@ -484,3 +506,7 @@ int main() {
     ImGui::SFML::Shutdown();
 }
 */
+/*
+A(2, 6) -> (4, 4)
+B(4, 6) -> (2, 4)
+C(2, 4) -> (4, 6)*/

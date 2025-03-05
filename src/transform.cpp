@@ -74,19 +74,29 @@ void clsTransform::SetRot(const float &RotCW)
 {
   this->m_RotCW = RotCW;
 }
-/*
+
+void clsTransform::SetRotCW(const float &RotCW)
+{
+  this->m_RotCW = RotCW;
+}
+
 void clsTransform::SetRotCCW(const float &RotCCW)
 {
   this->m_RotCCW = RotCCW;
 }
-*/
+
 float clsTransform::GetRot() const
 {
   return (m_RotCW);
 }
-/*
+
+float clsTransform::GetRotCW() const
+{
+  return (m_RotCW);
+}
+
 float clsTransform::GetRotCCW() const
 {
   return (m_RotCCW);
 }
-*/
+

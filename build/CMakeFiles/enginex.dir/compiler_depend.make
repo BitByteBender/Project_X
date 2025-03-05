@@ -156,6 +156,7 @@ CMakeFiles/enginex.dir/main.cpp.o: /home/godmode/Project_X/main.cpp \
   /usr/include/c++/13/bits/shared_ptr.h \
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algobase.h \
@@ -187,6 +188,7 @@ CMakeFiles/enginex.dir/main.cpp.o: /home/godmode/Project_X/main.cpp \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/chrono \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cmath \
   /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
@@ -230,6 +232,18 @@ CMakeFiles/enginex.dir/main.cpp.o: /home/godmode/Project_X/main.cpp \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
@@ -245,6 +259,7 @@ CMakeFiles/enginex.dir/main.cpp.o: /home/godmode/Project_X/main.cpp \
   /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -265,9 +280,18 @@ CMakeFiles/enginex.dir/main.cpp.o: /home/godmode/Project_X/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -492,6 +516,7 @@ CMakeFiles/enginex.dir/src/shape.cpp.o: /home/godmode/Project_X/src/shape.cpp \
   /usr/include/c++/13/bits/shared_ptr.h \
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algobase.h \
@@ -523,6 +548,7 @@ CMakeFiles/enginex.dir/src/shape.cpp.o: /home/godmode/Project_X/src/shape.cpp \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/chrono \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cmath \
   /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
@@ -566,6 +592,18 @@ CMakeFiles/enginex.dir/src/shape.cpp.o: /home/godmode/Project_X/src/shape.cpp \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
@@ -581,6 +619,7 @@ CMakeFiles/enginex.dir/src/shape.cpp.o: /home/godmode/Project_X/src/shape.cpp \
   /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -599,9 +638,18 @@ CMakeFiles/enginex.dir/src/shape.cpp.o: /home/godmode/Project_X/src/shape.cpp \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -825,6 +873,7 @@ CMakeFiles/enginex.dir/src/transform.cpp.o: /home/godmode/Project_X/src/transfor
   /usr/include/c++/13/bits/shared_ptr.h \
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algobase.h \
@@ -856,6 +905,7 @@ CMakeFiles/enginex.dir/src/transform.cpp.o: /home/godmode/Project_X/src/transfor
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/chrono \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cmath \
   /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
@@ -899,6 +949,18 @@ CMakeFiles/enginex.dir/src/transform.cpp.o: /home/godmode/Project_X/src/transfor
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
@@ -914,6 +976,7 @@ CMakeFiles/enginex.dir/src/transform.cpp.o: /home/godmode/Project_X/src/transfor
   /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -932,9 +995,18 @@ CMakeFiles/enginex.dir/src/transform.cpp.o: /home/godmode/Project_X/src/transfor
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -1059,8 +1131,6 @@ CMakeFiles/enginex.dir/src/transform.cpp.o: /home/godmode/Project_X/src/transfor
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
@@ -1076,8 +1146,6 @@ CMakeFiles/enginex.dir/src/transform.cpp.o: /home/godmode/Project_X/src/transfor
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -1113,13 +1181,51 @@ CMakeFiles/enginex.dir/src/transform.cpp.o: /home/godmode/Project_X/src/transfor
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/time.h:
+
+/usr/include/string.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/pthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/math.h:
+
+/usr/include/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
@@ -1138,10 +1244,6 @@ CMakeFiles/enginex.dir/src/transform.cpp.o: /home/godmode/Project_X/src/transfor
 _deps/sfml-src/include/SFML/Graphics/Rect.inl:
 
 /usr/include/c++/13/bits/memoryfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/time.h:
 
 /usr/include/c++/13/bits/hashtable_policy.h:
 
@@ -1170,8 +1272,6 @@ _deps/sfml-src/include/SFML/Window/ContextSettings.hpp:
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
 _deps/imgui-src/imconfig.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 
@@ -1203,6 +1303,10 @@ _deps/imgui-src/imconfig.h:
 
 _deps/sfml-src/include/SFML/Window/WindowEnums.hpp:
 
+/usr/include/wchar.h:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
 _deps/sfml-src/include/SFML/Graphics/RenderTarget.hpp:
 
 _deps/sfml-src/include/SFML/Window/Vulkan.hpp:
@@ -1211,11 +1315,7 @@ _deps/sfml-src/include/SFML/Window/Vulkan.hpp:
 
 /usr/include/c++/13/bits/string_view.tcc:
 
-_deps/sfml-src/include/SFML/Window/Touch.hpp:
-
 _deps/sfml-src/include/SFML/Graphics/RenderTexture.hpp:
-
-_deps/sfml-src/include/SFML/Window/Sensor.hpp:
 
 _deps/sfml-src/include/SFML/Window/Mouse.hpp:
 
@@ -1299,6 +1399,8 @@ _deps/sfml-src/include/SFML/Window/Window.hpp:
 
 _deps/imgui-sfml-src/imgui-SFML.h:
 
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
 /usr/include/c++/13/string_view:
 
 /usr/include/features-time64.h:
@@ -1339,13 +1441,23 @@ _deps/sfml-src/include/SFML/Graphics/RectangleShape.hpp:
 
 _deps/sfml-src/include/SFML/Graphics/StencilMode.hpp:
 
-/usr/include/stdc-predef.h:
+_deps/sfml-src/include/SFML/Window/Sensor.hpp:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
 /usr/include/c++/13/ostream:
 
+_deps/sfml-src/include/SFML/Window/Touch.hpp:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
+
 /usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /usr/include/libintl.h:
 
@@ -1389,11 +1501,11 @@ _deps/sfml-src/include/SFML/System/Angle.inl:
 
 /usr/include/c++/13/bits/stl_iterator.h:
 
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
 _deps/sfml-src/include/SFML/Graphics/Transformable.hpp:
 
 /usr/include/c++/13/ext/aligned_buffer.h:
-
-/usr/include/locale.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
@@ -1455,8 +1567,6 @@ _deps/sfml-src/include/SFML/Graphics.hpp:
 
 _deps/sfml-src/include/SFML/System/String.hpp:
 
-/usr/include/stdlib.h:
-
 _deps/sfml-src/include/SFML/Graphics/Rect.hpp:
 
 /usr/include/c++/13/ctime:
@@ -1471,9 +1581,15 @@ _deps/sfml-src/include/SFML/Graphics/Sprite.hpp:
 
 _deps/sfml-src/include/SFML/Window/WindowBase.hpp:
 
+/usr/include/c++/13/bits/specfun.h:
+
 _deps/sfml-src/include/SFML/System.hpp:
 
 /usr/include/c++/13/bits/streambuf.tcc:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
 
 _deps/sfml-src/include/SFML/Graphics/VertexArray.hpp:
 
@@ -1503,10 +1619,6 @@ _deps/sfml-src/include/SFML/System/Time.inl:
 
 /usr/include/c++/13/bits/memory_resource.h:
 
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/include/wchar.h:
-
 _deps/sfml-src/include/SFML/Window/VideoMode.hpp:
 
 /usr/include/c++/13/bits/move.h:
@@ -1531,6 +1643,10 @@ _deps/sfml-src/include/SFML/Window/VideoMode.hpp:
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
+/usr/include/strings.h:
+
+/usr/include/c++/13/iomanip:
+
 /usr/include/c++/13/bits/ptr_traits.h:
 
 /usr/include/c++/13/bits/quoted_string.h:
@@ -1538,8 +1654,6 @@ _deps/sfml-src/include/SFML/Window/VideoMode.hpp:
 _deps/sfml-src/include/SFML/System/Sleep.hpp:
 
 /usr/include/c++/13/bits/unordered_map.h:
-
-/usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/bits/refwrap.h:
 
@@ -1561,11 +1675,15 @@ _deps/sfml-src/include/SFML/System/Export.hpp:
 
 /usr/include/c++/13/bits/utility.h:
 
+/usr/include/c++/13/tr1/beta_function.tcc:
+
 /usr/include/stdio.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/13/bits/stl_relops.h:
 
@@ -1591,6 +1709,8 @@ _deps/sfml-src/include/SFML/System/Export.hpp:
 
 /usr/include/c++/13/cassert:
 
+/usr/include/c++/13/tr1/poly_hermite.tcc:
+
 /usr/include/c++/13/cctype:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
@@ -1599,7 +1719,11 @@ _deps/sfml-src/include/SFML/Window/WindowHandle.hpp:
 
 /usr/include/c++/13/ext/atomicity.h:
 
+/usr/include/c++/13/tr1/gamma.tcc:
+
 /usr/include/c++/13/chrono:
+
+/usr/include/c++/13/cmath:
 
 /usr/include/c++/13/system_error:
 
@@ -1631,6 +1755,8 @@ _deps/sfml-src/include/SFML/Graphics/Glsl.inl:
 
 /usr/include/c++/13/ext/type_traits.h:
 
+/usr/include/c++/13/tr1/bessel_function.tcc:
+
 /usr/include/c++/13/initializer_list:
 
 /usr/include/c++/13/ios:
@@ -1655,10 +1781,6 @@ _deps/sfml-src/include/SFML/Graphics/Color.inl:
 
 /usr/include/c++/13/pstl/glue_memory_defs.h:
 
-/usr/include/c++/13/iomanip:
-
-/usr/include/strings.h:
-
 _deps/sfml-src/include/SFML/System/FileInputStream.hpp:
 
 /usr/include/c++/13/pstl/pstl_config.h:
@@ -1669,7 +1791,19 @@ _deps/sfml-src/include/SFML/System/FileInputStream.hpp:
 
 /usr/include/c++/13/string:
 
+/usr/include/c++/13/tr1/ell_integral.tcc:
+
+/usr/include/c++/13/tr1/exp_integral.tcc:
+
+/usr/include/c++/13/bits/range_access.h:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
 /usr/include/c++/13/type_traits:
+
+/usr/include/c++/13/tr1/legendre_function.tcc:
+
+/usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/13/bits/allocator.h:
 
@@ -1678,17 +1812,3 @@ _deps/sfml-src/include/SFML/System/FileInputStream.hpp:
 /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h:
 
 /usr/include/ctype.h:
-
-/usr/include/pthread.h:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
-
-/usr/include/endian.h:
-
-/usr/include/stdint.h:
-
-/usr/include/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
