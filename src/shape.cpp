@@ -117,9 +117,10 @@ void clsCShape::SetDfltPos(void)
 void clsCShape::SetRotation(const float &Rot)
 {
   m_CTransform->SetRot(Rot);
+  //GetShape().setOrigin({25.f, 25.f});
   GetShape().rotate(sf::degrees(m_CTransform->GetRot()));
-  //clsTransform::SetRotCW(Rot);
-  //GetShape().rotate(sf::degrees(clsTransform::GetRotCW()));
+  //clsTransform::SetRot(Rot);
+  //GetShape().rotate(sf::degrees(clsTransform::GetRot()));
 }
 
 /*
