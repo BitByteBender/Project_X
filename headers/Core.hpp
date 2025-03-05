@@ -9,6 +9,7 @@
 #include <cstdint>
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 using std::vector;
 using std::cout;
@@ -38,9 +39,11 @@ public:
   float GetPosY() const;
   void SetDefaultPos(const float &PosX, const float &PosY);
   void SetRot(const float &RotCW);
-  //void SetRotCCW(const float &RotCCW);
+  void SetRotCW(const float &RotCW);
+  void SetRotCCW(const float &RotCCW);
   float GetRot() const;
-  //float GetRotCCW() const;
+  float GetRotCW() const;
+  float GetRotCCW() const;
 };
 
 class clsCShape : public clsTransform
